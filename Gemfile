@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in bestgems.gemspec
+group :development do
+  gem 'pry'
+end
+
 gemspec
