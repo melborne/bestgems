@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Bestgems::VERSION
   spec.authors       = ["kyoendo"]
   spec.email         = ["postagie@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Ruby wrapper for the BestGems.org API}
+  spec.homepage      = "https://github.com/melborne/bestgems"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

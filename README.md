@@ -1,6 +1,6 @@
 # Bestgems
 
-TODO: Write a gem description
+Ruby wrapper for the BestGems.org API.
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'bestgems'
+
+client = Bestgems.client
+
+client.total_downloads(:rack) # => [{:date=>"2014-08-06", :total_downloads=>48365953}, {:date=>"2014-08-05", :total_downloads=>48305390}, {:date=>"2014-08-04", :total_downloads=>48246069}, {:date=>"2014-08-03", :total_downloads=>48203248}, {:date=>"2014-08-02", :total_downloads=>48172608}, ... ]
+
+client.daily_downloads(:rack) # => [{:date=>"2014-08-06", :daily_downloads=>60563}, {:date=>"2014-08-05", :daily_downloads=>59321}, {:date=>"2014-08-04", :daily_downloads=>42821}, {:date=>"2014-08-03", :daily_downloads=>30640}, ... ]
+
+client.total_ranking(:rack) # => [{:date=>"2014-08-06", :total_ranking=>2}, {:date=>"2014-08-05", :total_ranking=>2}, {:date=>"2014-08-04", :total_ranking=>2}, {:date=>"2014-08-03", :total_ranking=>2}, {:date=>"2014-08-02", :total_ranking=>2}, ... ]
+
+client.daily_ranking(:rack) # => [{:date=>"2014-08-06", :daily_ranking=>6}, {:date=>"2014-08-05", :daily_ranking=>7}, {:date=>"2014-08-04", :daily_ranking=>4}, {:date=>"2014-08-03", :daily_ranking=>3}, {:date=>"2014-08-02", :daily_ranking=>3}, ... ]
+```
 
 ## Contributing
 
