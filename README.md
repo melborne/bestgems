@@ -2,6 +2,10 @@
 
 Ruby wrapper for the BestGems.org API.
 
+>[BestGems -- Ruby Gems Download Ranking](http://bestgems.org/ "BestGems -- Ruby Gems Download Ranking")
+>
+>[BestGems API v1 Specification · xmisao/bestgems.org Wiki](https://github.com/xmisao/bestgems.org/wiki/BestGems-API-v1-Specification "BestGems API v1 Specification · xmisao/bestgems.org Wiki")
+
 ## Installation
 
 Add this line to your application's Gemfile:
