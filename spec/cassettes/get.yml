@@ -1,0 +1,126 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bestgems.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 07 Aug 2014 01:26:33 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n<head>\n<title>BestGems -- Ruby Gems Download
+        Ranking</title>\n<link href=\"../bootstrap/css/bootstrap.css\" rel=\"stylesheet\">\n<link
+        href=\"../css/theme.css\" rel=\"stylesheet\">\n</head>\n<body>\n\n<div class=\"container-narrow\">\n\t<div
+        class=\"masthead\">\n\t<ul class=\"nav nav-pills pull-right\">\n\t\t<li><a
+        href=\"/total\">Total</a></li>\n\t\t<li><a href=\"/daily\">Daily</a></li>\n\t\t<li><a
+        href=\"/featured\">Featured</a></li>\n\t\t<li><a href=\"https://github.com/xmisao/bestgems.org/wiki/BestGems-API-v1-Specification\">API</a></li>\n\t\t<li><a
+        href=\"/about\">About</a></li>\n\t\t<li>\n\t\t\t<form class=\"form-search\"
+        action=\"/search\" method=\"GET\">\n\t\t\t\t<input type=\"text\" class=\"input-medium
+        search-query\" name=\"q\">\n\t\t\t\t<button type=\"submit\" class=\"btn\"><i
+        class=\"icon-search\"></i></button>\n\t\t\t</form>\n\t\t</li>\n\t</ul>\n\t<h3><a
+        href=\"/\" class=\"header\">BestGems</a></h3>\n</div>\n\n\n\t<hr>\n\n\t<div
+        class=\"jumbotron\">\n\t\t<h1 class=\"logo\">BestGems</h1>\n\t\t<p class=\"lead\">Ruby
+        gems download ranking. Find the best gem package for you!</p>\n    <p>BestGems.org
+        is <a href=\"https://github.com/xmisao/bestgems.org\">opensouce</a>. Please,
+        contribute!</p>\n\t</div>\n\n\t<hr>\n\n\t<div class=\"row-fluid marketing\">\n\t\t<div
+        class=\"span6\">\n\t\t\t<h4><a href=\"/total\">Total Downloads Ranking</a></h4>\n\t\t\t<table
+        class=\"table table-striped\">\n\t\t\t\t<tr><th>Rank</th><th>Downloads</th><th>Name</th></tr>\n\t\t\t\t<tr><td
+        class=\"center\">1</td><td class=\"center\">53,409,869</td><td><a href=\"/gems/rake\">rake</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">2</td><td class=\"center\">48,365,953</td><td><a href=\"/gems/rack\">rack</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">3</td><td class=\"center\">46,457,023</td><td><a href=\"/gems/thor\">thor</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">4</td><td class=\"center\">44,745,927</td><td><a href=\"/gems/activesupport\">activesupport</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">5</td><td class=\"center\">42,146,688</td><td><a href=\"/gems/multi_json\">multi_json</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">6</td><td class=\"center\">41,887,767</td><td><a href=\"/gems/json\">json</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">7</td><td class=\"center\">40,740,166</td><td><a href=\"/gems/mime-types\">mime-types</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">8</td><td class=\"center\">38,925,105</td><td><a href=\"/gems/i18n\">i18n</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">9</td><td class=\"center\">37,887,715</td><td><a href=\"/gems/rails\">rails</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">10</td><td class=\"center\">37,694,788</td><td><a href=\"/gems/builder\">builder</a></td></tr>\n\t\t\t</table>\n\t\t\t<p
+        class=\"text-right\"><a class=\"btn\" href=\"/total\">more...</a></p>\n\t\t</div>\n\t\t<div
+        class=\"span6\">\n\t\t\t<h4><a href=\"/daily\">Daily Downloads Ranking</a></h4>\n\t\t\t<table
+        class=\"table table-striped\">\n\t\t\t\t<tr><th>Rank</th><th>Downloads</th><th>Name</th></tr>\n\t\t\t\t<tr><td
+        class=\"center\">1</td><td class=\"center\">73,159</td><td><a href=\"/gems/rake\">rake</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">2</td><td class=\"center\">69,708</td><td><a href=\"/gems/multi_json\">multi_json</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">3</td><td class=\"center\">66,200</td><td><a href=\"/gems/json\">json</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">4</td><td class=\"center\">63,847</td><td><a href=\"/gems/mime-types\">mime-types</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">5</td><td class=\"center\">62,719</td><td><a href=\"/gems/i18n\">i18n</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">6</td><td class=\"center\">60,563</td><td><a href=\"/gems/rack\">rack</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">7</td><td class=\"center\">59,854</td><td><a href=\"/gems/activesupport\">activesupport</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">8</td><td class=\"center\">55,803</td><td><a href=\"/gems/builder\">builder</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">9</td><td class=\"center\">55,314</td><td><a href=\"/gems/thor\">thor</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">10</td><td class=\"center\">54,453</td><td><a href=\"/gems/tzinfo\">tzinfo</a></td></tr>\n\t\t\t</table>\n\t\t\t<p
+        class=\"text-right\"><a class=\"btn\" href=\"/daily\">more...</a></p>\n\t\t</div>\n\t</div>\n\t<div
+        class=\"row-fluid marketing\">\n\t\t<div class=\"span6\">\n\t\t\t<h4><a href=\"/featured\">Featured
+        Gems Ranking</a></h4>\n\t\t\t<table class=\"table table-striped\">\n\t\t\t\t<tr><th>Rank</th><th>Diff</th><th>Daily
+        Rank</th><th>Total Rank</th><th>Name</th></tr>\n\t\t\t\t<tr><td class=\"center\">1</td><td
+        class=\"center\">+56,515</td><td class=\"center\">659</td><td class=\"center\">57,174</td><td><a
+        href=\"/gems/rejectu\">rejectu</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">2</td><td
+        class=\"center\">+29,216</td><td class=\"center\">946</td><td class=\"center\">30,162</td><td><a
+        href=\"/gems/roadie-rails\">roadie-rails</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">3</td><td
+        class=\"center\">+25,822</td><td class=\"center\">977</td><td class=\"center\">26,799</td><td><a
+        href=\"/gems/mondupe\">mondupe</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">4</td><td
+        class=\"center\">+17,332</td><td class=\"center\">503</td><td class=\"center\">17,835</td><td><a
+        href=\"/gems/power_assert\">power_assert</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">5</td><td
+        class=\"center\">+12,469</td><td class=\"center\">967</td><td class=\"center\">13,436</td><td><a
+        href=\"/gems/mkfifo\">mkfifo</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">6</td><td
+        class=\"center\">+8,164</td><td class=\"center\">949</td><td class=\"center\">9,113</td><td><a
+        href=\"/gems/xml-fu\">xml-fu</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">7</td><td
+        class=\"center\">+7,152</td><td class=\"center\">879</td><td class=\"center\">8,031</td><td><a
+        href=\"/gems/toastr-rails\">toastr-rails</a></td></tr>\n\t\t\t\t<tr><td class=\"center\">8</td><td
+        class=\"center\">+6,472</td><td class=\"center\">894</td><td class=\"center\">7,366</td><td><a
+        href=\"/gems/zillabyte-cli\">zillabyte-cli</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">9</td><td class=\"center\">+6,220</td><td class=\"center\">898</td><td
+        class=\"center\">7,118</td><td><a href=\"/gems/zillabyte\">zillabyte</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">10</td><td class=\"center\">+5,686</td><td class=\"center\">980</td><td
+        class=\"center\">6,666</td><td><a href=\"/gems/crass\">crass</a></td></tr>\n\t\t\t</table>\n\t\t\t<p
+        class=\"text-right\"><a class=\"btn\" href=\"/featured\">more...</a></p>\n\t\t</div>\n\t\t<div
+        class=\"span6\">\n\t\t\t<h4>Statistics</h4>\n\t\t\t<table class=\"table table-striped\">\n\t\t\t\t<tr><th>#</th><th>Title</th></tr>\n\t\t\t\t<tr><td
+        class=\"center\">1</td><td><a href=\"/stat/gems\">Number of All Gems</a></td></tr>\n\t\t\t\t<tr><td
+        class=\"center\">2</td><td><a href=\"/stat/download\">Download Trends of All
+        Gems</a></td></tr>\n\t\t\t</table>\n\t\t\t<h4>Reports</h4>\n\t\t\t<table class=\"table
+        table-striped\">\n\t\t\t\t<tr><th>Title</th><th>Summary</th></tr>\n\t\t\t\t<tr><td><a
+        href=\"/reports/2013H2\">H2, 2013</td><td>Second half of 2013, semiannual
+        report. Between Jul 1 and Dec 31.</td></tr>\n\t\t\t\t<tr><td><a href=\"/reports/2013Q4\">Q4,
+        2013</td><td>Final quarter of 2013, quarterly report. Between Oct 1 and Dec
+        31.</td></tr>\n\t\t\t\t<tr><td><a href=\"/reports/2013Q3\">Q3, 2013</td><td>3rd
+        quarter of 2013, quarterly report. Between Jul 1 and Sep 30.</td></tr>\n\t\t\t</table>\n\t\t</div>\n\t</div>\n\n\t<div
+        class=\"row\">\n\t<script type=\"text/javascript\"><!--\n\tgoogle_ad_client
+        = \"ca-pub-8257359908391644\";\n\t/* bestgems_bottom */\n\tgoogle_ad_slot
+        = \"4115061810\";\n\tgoogle_ad_width = 728;\n\tgoogle_ad_height = 90;\n\t//-->\n\t</script>\n\t<script
+        type=\"text/javascript\"\n\tsrc=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n\t</script>\n</div>\n\n</div>\n\n\n<script
+        type=\"text/javascript\">\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount',
+        'UA-42168722-1']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n
+        \   var ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+        : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Thu, 07 Aug 2014 01:26:08 GMT
+recorded_with: VCR 2.9.2
