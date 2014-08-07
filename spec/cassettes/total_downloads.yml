@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bestgems.org/api/v1/gems/colcolor/total_downloads.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 07 Aug 2014 01:35:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1056'
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '[{"date":"2014-08-06","total_downloads":592},{"date":"2014-08-05","total_downloads":582},{"date":"2014-08-04","total_downloads":567},{"date":"2014-08-03","total_downloads":558},{"date":"2014-08-02","total_downloads":545},{"date":"2014-08-01","total_downloads":526},{"date":"2014-07-31","total_downloads":518},{"date":"2014-07-30","total_downloads":459},{"date":"2014-07-29","total_downloads":402},{"date":"2014-07-28","total_downloads":383},{"date":"2014-07-27","total_downloads":358},{"date":"2014-07-26","total_downloads":354},{"date":"2014-07-25","total_downloads":353},{"date":"2014-07-24","total_downloads":344},{"date":"2014-07-23","total_downloads":275},{"date":"2014-07-22","total_downloads":255},{"date":"2014-07-21","total_downloads":254},{"date":"2014-07-20","total_downloads":235},{"date":"2014-07-19","total_downloads":221},{"date":"2014-07-18","total_downloads":214},{"date":"2014-07-17","total_downloads":214},{"date":"2014-07-16","total_downloads":211},{"date":"2014-07-15","total_downloads":173},{"date":"2014-07-14","total_downloads":14}]'
+    http_version: 
+  recorded_at: Thu, 07 Aug 2014 01:35:02 GMT
+recorded_with: VCR 2.9.2

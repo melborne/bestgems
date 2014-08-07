@@ -5,22 +5,28 @@ module Bestgems
     module Trends
       def total_downloads(gem_name)
         res = get "#{Bestgems.api_gems_endpoint}/#{gem_name}/total_downloads.json"
-        JSON.parse(res)
+        json2rb_obj(res)
       end
 
       def daily_downloads(gem_name)
         res = get "#{Bestgems.api_gems_endpoint}/#{gem_name}/daily_downloads.json"
-        JSON.parse(res)
+        json2rb_obj(res)
       end
 
       def total_ranking(gem_name)
         res = get "#{Bestgems.api_gems_endpoint}/#{gem_name}/total_ranking.json"
-        JSON.parse(res)
+        json2rb_obj(res)
       end
 
       def daily_ranking(gem_name)
         res = get "#{Bestgems.api_gems_endpoint}/#{gem_name}/daily_ranking.json"
-        JSON.parse(res)
+        json2rb_obj(res)
+      end
+
+      def json2rb_obj(data)
+        JSON.parse(data).map do |h|
+          h.inject({}) { |h, (k, v)| h[k.intern] = v; h }
+        end
       end
     end
   end

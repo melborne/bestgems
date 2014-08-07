@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bestgems.org/api/v1/gems/colcolor/total_ranking.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 07 Aug 2014 01:44:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1057'
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '[{"date":"2014-08-06","total_ranking":68455},{"date":"2014-08-05","total_ranking":68680},{"date":"2014-08-04","total_ranking":69046},{"date":"2014-08-03","total_ranking":69224},{"date":"2014-08-02","total_ranking":69541},{"date":"2014-08-01","total_ranking":69947},{"date":"2014-07-31","total_ranking":70141},{"date":"2014-07-30","total_ranking":71403},{"date":"2014-07-29","total_ranking":72594},{"date":"2014-07-28","total_ranking":72913},{"date":"2014-07-27","total_ranking":73372},{"date":"2014-07-26","total_ranking":73442},{"date":"2014-07-25","total_ranking":73451},{"date":"2014-07-24","total_ranking":73564},{"date":"2014-07-23","total_ranking":75108},{"date":"2014-07-22","total_ranking":75538},{"date":"2014-07-21","total_ranking":75521},{"date":"2014-07-20","total_ranking":75921},{"date":"2014-07-19","total_ranking":76196},{"date":"2014-07-18","total_ranking":76330},{"date":"2014-07-17","total_ranking":76306},{"date":"2014-07-16","total_ranking":76358},{"date":"2014-07-15","total_ranking":77198},{"date":"2014-07-14","total_ranking":78402}]'
+    http_version: 
+  recorded_at: Thu, 07 Aug 2014 01:44:24 GMT
+recorded_with: VCR 2.9.2

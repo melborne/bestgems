@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://bestgems.org/api/v1/gems//total_downloads.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Thu, 07 Aug 2014 01:50:32 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '18'
+      Connection:
+      - keep-alive
+      X-Cascade:
+      - pass
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: "<h1>Not Found</h1>"
+    http_version: 
+  recorded_at: Thu, 07 Aug 2014 01:50:06 GMT
+recorded_with: VCR 2.9.2
