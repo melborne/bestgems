@@ -5,7 +5,10 @@ describe Bestgems do
     expect(Bestgems::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe ".client" do
+    it "creates an Bestgems Client" do
+      expect(Bestgems.client).to be_kind_of Bestgems::Client
+    end
   end
+
 end

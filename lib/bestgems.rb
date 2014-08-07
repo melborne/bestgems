@@ -17,5 +17,9 @@ module Bestgems
     def api_gems_endpoint
       File.join(api_host, api_version, 'gems')
     end
+
+    def client
+      @client ||= Client.new
+    end
   end
 end
