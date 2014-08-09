@@ -45,10 +45,15 @@ describe Bestgems::Client do
     end
   end
 
-  describe "#featured_ranking", vcr:{cassette_name:'featured_ranking'} do
-    it "returns recent growth of ranking" do
-      res = client.featured_ranking('colcolor')['2014-08-06']
-      expect(res).to eq (68455-8533)
+  describe "#growth", vcr:{cassette_name:'growth'} do
+    it "returns growth point with recent 5 days" do
+      res = client.growth('colcolor')
+      expect(res).to eq 60885
+    end
+
+    it "returns growth point with recent 2 days" do
+      res = client.growth('colcolor', base_days:2)
+      expect(res).to eq 58805
     end
   end
 end

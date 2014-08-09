@@ -23,13 +23,15 @@ module Bestgems
         json2rb_obj(res)
       end
 
-      def featured_ranking(gem_name)
+      # return: growth point based on diff between total and daily ranking
+      #         in base_days(default: 5).
+      def growth(gem_name, base_days:5)
         total = total_ranking(gem_name)
         daily = daily_ranking(gem_name)
-        total.inject({}) do |mem, (t_date, t_rank)|
-          mem[t_date] = daily[t_date] ? t_rank - daily[t_date] : nil
-          mem
+        total, daily = [total, daily].map do |data|
+          data.take(base_days).inject(0) { |m, (_, rank)| rank ? m + rank : m }
         end
+        (total - daily) / base_days
       end
 
       def json2rb_obj(data)
