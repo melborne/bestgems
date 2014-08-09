@@ -44,4 +44,11 @@ describe Bestgems::Client do
       expect(res.first.keys).to contain_exactly(:date, :daily_ranking)
     end
   end
+
+  describe "#featured_ranking", vcr:{cassette_name:'featured_ranking'} do
+    it "returns recent growth of ranking" do
+      res = client.featured_ranking('colcolor').find { |h| h[:date]=='2014-08-06' }
+      expect(res).to eq({date:'2014-08-06', featured_ranking:(68455-8533)})
+    end
+  end
 end
