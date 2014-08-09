@@ -1,5 +1,4 @@
 require "json"
-require "date"
 
 module Bestgems
   class Client
@@ -36,7 +35,7 @@ module Bestgems
       def json2rb_obj(data)
         JSON.parse(data).inject({}) do |mem, h|
           date, val = h.values
-          mem[Date.parse date] = val
+          mem[date] = val
           mem
         end
       end
